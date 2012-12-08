@@ -29,7 +29,7 @@ module SunspotTest
           server.run
         end
 
-        at_exit { Process.kill("TERM", pid) }
+        #at_exit { Process.kill("TERM", pid) }
 
         wait_until_solr_starts
       end
